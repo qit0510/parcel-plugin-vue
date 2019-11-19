@@ -13,7 +13,7 @@ ownDebugger('JSPackager');
 class JSPackager extends JSPackagerOfficial {
     async start() {
         ownDebugger('start');
-
+        this.bundleLoaders = new Set();
         this.first = true;
         this.dedupe = new Map();
         this.bundleLoaders = new Set();
